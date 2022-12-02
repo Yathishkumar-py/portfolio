@@ -5,9 +5,105 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: #1d1d1d;
+  display: block;
+  min-width: 320px;
+  font-family: "Open Sans",sans-serif;
+  color: #fff;
+  padding-left: 2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  color: #fff;
+  margin: 0;
+  font-family: font-file-82132;
+  font-weight: 400;
+  font-size: 4.3rem;
+  line-height: 4.7rem;
+  position: relative;
+}
+
+.blast{
+  opacity:1;
+  display:inline-block;
+  -webkit-transition:all 0.3s ease-out;
+  -o-transition:all 0.3s ease-out;
+  transition:all 0.3s ease-out;
+}
+
+.blast:hover{
+  color:#FFD700
+}
+
+.bounce{
+  animation-name: bounce;
+}
+
+.bouncing-letters span {
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  display: inline-block;
+  transition: all 0.3s ease-out;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+      transform: scale(1, 1);
+  }
+  40% {
+      transform: scale(1.55, 0.55);
+  }
+  45% {
+      transform: scale(1.55, 0.55);
+  }
+  70% {
+      transform: scale(1, 0.95);
+  }
+  90% {
+      transform: scale(1, 1);
+  }
+}
+
+.gold-p{
+  color: #FFD700;
+  margin-left: 25%;
+  line-height: 0rem;
+}
+.gold-p:hover{
+  color: #fff;
+}
+
+.body-name{
+  margin-top: 7rem;
+  margin-left: 10rem;
+}
+
+.active{
+  color: #FFD700 !important;
+}
+
+.first{
+  color: #fff;
+}
+
+.second{
+  color: #FFD700;
+  margin-left: -40px;
+}
+
+.first:hover{
+  color: #FFD700;
 }
