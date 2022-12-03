@@ -1,16 +1,68 @@
-import { FaBars } from "react-icons/fa";
-import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
 
-export const Nav = styled.nav`
-    background: #1d1d1d;
-    height: 85px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 4rem;
-    z-index: 12;
+export const NavbarContainer = styled.nav`
+  width: 100%;
+  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+  background-color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 700px) {
+    height: 80px;
+  }
 `;
+
+export const LeftContainer = styled.div`
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+  margin-top: 1rem;
+`;
+
+export const RightContainer = styled.div`
+  flex: 40%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 1rem;
+`;
+
+export const NavbarInnerContainer = styled.div`
+  width: 100%;
+  height: 80px;
+  display: flex;
+`;
+
+export const NavbarLinkContainer = styled.div`
+  display: flex;
+`;
+
+export const NavbarLink = styled(Link)`
+  color: #fff;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+  &:hover {
+    color: #FFD700;
+  }
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+
+export const NavbarLinkExtended = styled(Link)`
+  color: #fff;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
+  &:hover {
+    color: #FFD700;
+  }
+`;
+
 export const NavLogo = styled(Link)`
   cursor: pointer;
   font-size: 2rem;
@@ -19,42 +71,26 @@ export const NavLogo = styled(Link)`
   font: icon;
   font-size: 74px;
   font-weight: bolder;
-
 `;
 
-export const NavLink = styled(Link)`
-color: #fff;
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 0 1rem;
-height: 100%;
-cursor: pointer;
-&:hover {
-  color: #FFD700;
-}
-`;
-
-export const Bars = styled(FaBars)`
-  display: none;
-  color: #fff;
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
+export const OpenLinksButton = styled.button`
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+  @media (min-width: 700px) {
+    display: none;
   }
 `;
 
-export const NavMenu = styled.div`
+export const NavbarExtendedContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-right: -24px;
-
-  @media screen and (max-width: 768px) {
+  @media (min-width: 700px) {
     display: none;
   }
 `;
