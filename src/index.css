@@ -12,6 +12,7 @@ body {
   min-width: 320px;
   font-family: "Open Sans",sans-serif;
   color: #fff;
+  padding-left: 2rem;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -21,7 +22,7 @@ code {
     monospace;
 }
 
-h1 {
+.body-name h1 {
   color: #fff;
   margin: 0;
   font-family: font-file-82132;
@@ -30,6 +31,7 @@ h1 {
   line-height: 4.7rem;
   position: relative;
 }
+
 
 .blast{
   opacity:1;
@@ -81,6 +83,8 @@ h1 {
   margin-left: 25%;
   line-height: 0rem;
 }
+
+
 .gold-p:hover{
   color: #fff;
 }
@@ -88,6 +92,77 @@ h1 {
 .body-name{
   margin-top: 7rem;
   margin-left: 10rem;
+}
+
+
+@media (max-width: 767px){
+  .body-name h1 {
+    color: #fff;
+    margin: 0;
+    font-family: font-file-82132;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+    position: relative;
+  }
+  .body-name{
+    margin-top: 4rem;
+    margin-left: 0rem;
+  }
+  .gold-p {
+    margin-left: 19%;
+    line-height: 2rem;
+    font-size: 1rem;
+    margin-top: -5px;
+
+}
+}
+
+@media (min-width: 768px) {
+  .body-name h1 {
+    color: #fff;
+    margin: 0;
+    font-family: font-file-82132;
+    font-weight: 400;
+    font-size: 3.3rem;
+    line-height: 3.7rem;
+    position: relative;
+  }
+  .body-name{
+    margin-top: 4rem;
+    margin-left: 8rem;
+  }
+  .gold-p {
+    margin-left: 29%;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    margin-top: -5px;
+
+}
+
+}
+@media (min-width: 1024px) {
+  .body-name h1 {
+    color: #fff;
+    margin: 0;
+    font-family: font-file-82132;
+    font-weight: 400;
+    font-size: 4.3rem;
+    line-height: 4.7rem;
+    position: relative;
+  }
+  .body-name{
+    margin-top: 7rem;
+    margin-left: 10rem;
+  }
+  .gold-p {
+    margin-left: 25%;
+    line-height: 4rem;
+    font-size: 2rem;
+    margin-top: -5px;
+
+}
+
 }
 
 .active{
