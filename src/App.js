@@ -7,9 +7,11 @@ import AboutMe from "./components/AboutMe"
 import ContactMe from "./components/ContactMe"
 import Projects from "./components/Projects"
 import MySkills from "./components/MySkills"
+import Footer from './components/Footer';
 
 function App() {
   return (
+    <>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -20,6 +22,8 @@ function App() {
         <Route path="/skills" element={<MySkills />} />
       </Routes>
     </BrowserRouter>
+    <Footer></Footer>
+    </>
   );
 }
 
