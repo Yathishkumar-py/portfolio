@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Footer from './Footer';
 
 const Home = () =>{
 
@@ -39,7 +40,7 @@ const Home = () =>{
         <div>
             <p className="gold-p">Expertize in Python & Django</p>
         </div>
-        
+        <Footer></Footer>
         </div>
         
     );

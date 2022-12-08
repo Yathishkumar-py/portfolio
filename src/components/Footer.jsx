@@ -1,5 +1,5 @@
 import $ from 'jquery';
-
+import { useEffect } from "react";
 
 const Footer = () => {
 
@@ -12,7 +12,11 @@ const Footer = () => {
           $(".ball").eq(i).css({"bottom":"0px","left":Math.random()*window.innerWidth-100,"animation-delay":Math.random()*5+"s","transform":"translateY("+Math.random()*10+"px)","background-color":colors[i%2]});
         }
       }
-      generateBalls();
+
+      useEffect(() => {
+        // 👇️ use a ref (best)
+        generateBalls();
+      }, []);
       
       window.addEventListener('resize', function(e) {
         $(".gooey-animations .ball").remove();
@@ -24,7 +28,6 @@ const Footer = () => {
 
     return <div><footer>
     <div className="gooey-animations"></div>
-    <h1></h1>
   </footer>
   
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1">

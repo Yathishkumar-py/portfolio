@@ -1,0 +1,14 @@
+[debug] [2022-12-08T10:23:03.509Z] ----------------------------------------------------------------------
+[debug] [2022-12-08T10:23:03.510Z] Command:       /home/softsuave/.nvm/versions/node/v16.14.0/bin/node /home/softsuave/.nvm/versions/node/v16.14.0/bin/firebase deploy
+[debug] [2022-12-08T10:23:03.511Z] CLI Version:   11.16.1
+[debug] [2022-12-08T10:23:03.511Z] Platform:      linux
+[debug] [2022-12-08T10:23:03.511Z] Node Version:  v16.14.0
+[debug] [2022-12-08T10:23:03.511Z] Time:          Thu Dec 08 2022 15:53:03 GMT+0530 (India Standard Time)
+[debug] [2022-12-08T10:23:03.511Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-08T10:23:03.554Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-08T10:23:03.554Z] > authorizing via signed-in user (iamyathi.py@gmail.com)
+[debug] [2022-12-08T10:23:03.554Z] [iam] checking project yathish-portfolio-c4fbc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-08T10:23:03.556Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/yathish-portfolio-c4fbc:testIamPermissions [none]
+[debug] [2022-12-08T10:23:03.556Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/yathish-portfolio-c4fbc:testIamPermissions x-goog-quota-user=projects/yathish-portfolio-c4fbc
+[debug] [2022-12-08T10:23:03.556Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/yathish-portfolio-c4fbc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
