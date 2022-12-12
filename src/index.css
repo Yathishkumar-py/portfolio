@@ -80,8 +80,11 @@ code {
 
 .gold-p{
   color: #FFD700;
-  margin-left: 25%;
   line-height: 0rem;
+  margin-left: 19%;
+  line-height: 2rem;
+  font-size: 1rem;
+  margin-top: -5px;
 }
 
 
@@ -109,13 +112,6 @@ code {
     margin-top: 4rem;
     margin-left: 0rem;
   }
-  .gold-p {
-    margin-left: 19%;
-    line-height: 2rem;
-    font-size: 1rem;
-    margin-top: -5px;
-
-}
 }
 
 @media (min-width: 768px) {
