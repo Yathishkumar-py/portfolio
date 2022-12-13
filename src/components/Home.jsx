@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Footer from './Footer';
+
 
 const Home = () =>{
 
@@ -40,7 +40,16 @@ const Home = () =>{
         <div>
             <p className="gold-p">Expertize in Python & Django</p>
         </div>
-        <Footer></Footer>
+        <section className="portfolio-experiment">
+            <a className="contact-me" href="/contact">
+                <span class="text">HIRE ME</span>
+                <span class="line -right"></span>
+                <span class="line -top"></span>
+                <span class="line -left"></span>
+                <span class="line -bottom"></span>
+            </a>
+            </section>
+        
         </div>
         
     );

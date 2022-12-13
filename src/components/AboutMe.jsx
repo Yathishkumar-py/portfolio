@@ -1,5 +1,9 @@
+import Footer from './Footer';
+
 const AboutMe = () => {
-    return <div>AboutME</div>
+    return <div>
+        <Footer></Footer>
+    </div>
 }
 
 export default AboutMe;
